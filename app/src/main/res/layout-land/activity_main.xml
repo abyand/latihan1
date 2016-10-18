@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.admin1.latihan3.MainActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Kalkulator Sederhana"
+        android:textSize="15pt"
+        android:id="@+id/textView" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="numberDecimal"
+        android:hint="angka1"
+        android:id="@+id/input1"
+        android:textSize="10pt"
+        android:layout_below="@+id/textView"
+        android:layout_alignParentStart="true" />
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="numberDecimal"
+        android:hint="angka2"
+        android:id="@+id/input2"
+        android:textSize="10pt"
+        android:layout_below="@+id/textView"
+        android:layout_toEndOf="@+id/kali" />
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="+"
+        android:id="@+id/tambah"
+        android:textSize="15pt"
+        android:layout_alignTop="@+id/kali"
+        android:layout_alignParentStart="true" />
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="-"
+        android:textSize="15pt"
+        android:id="@+id/kurang"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true" />
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="*"
+        android:textSize="15pt"
+        android:id="@+id/kali"
+        android:layout_above="@+id/kurang"
+        android:layout_toEndOf="@+id/tambah" />
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="/"
+        android:textSize="15pt"
+        android:id="@+id/bagi"
+        android:layout_below="@+id/kali"
+        android:layout_toEndOf="@+id/tambah" />
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="="
+        android:textSize="15pt"
+        android:id="@+id/samadengan"
+        android:layout_marginStart="33dp"
+        android:layout_below="@+id/textView"
+        android:layout_toEndOf="@+id/input2" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/simbol1"
+        android:textSize="15pt"
+        android:text=""
+        android:layout_alignBottom="@+id/input1"
+        android:layout_toEndOf="@+id/tambah"
+        android:layout_marginStart="38dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="hasil"
+        android:textSize="15pt"
+        android:id="@+id/hasil"
+        android:layout_alignBottom="@+id/input2"
+        android:layout_toStartOf="@+id/hapus" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Clear"
+        android:id="@+id/hapus"
+        android:textSize="7pt"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true" />
+
+
+
+
+
+</RelativeLayout>
